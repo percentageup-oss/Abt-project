@@ -3,133 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABT Enterprise - B4S</title>
+    <title>ABTZ ENTERPRISE</title>
     <style>
-        /* ABT DARK THEME */
         body {
             background-color: #0a0a0a;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             min-height: 100vh;
+            text-align: center;
         }
 
         .container {
+            width: 90%;
             max-width: 500px;
-            width: 100%;
-            background: #141414;
             padding: 40px;
+            background: #111;
             border-radius: 20px;
-            border: 1px solid #333;
-            text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        /* LOGO STYLE */
-        .logo {
-            font-size: 3rem;
-            font-weight: 900;
-            letter-spacing: 5px;
-            color: #00ff41; /* Neon Green */
-            margin-bottom: 5px;
-            text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
-        }
-
-        .company-name {
-            font-size: 0.9rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 30px;
+            border: 1px solid #333;
         }
 
         h1 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            color: #ff4b2b;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 5px;
         }
 
-        p {
-            color: #aaa;
-            line-height: 1.6;
+        p.tagline {
+            color: #888;
             margin-bottom: 30px;
         }
 
-        /* FEATURES SECTION */
-        .feature-box {
-            background: #1d1d1d;
-            padding: 15px;
-            border-radius: 10px;
+        /* The Live Preview Window */
+        .preview-container {
+            width: 100%;
+            height: 500px;
+            background: #000;
+            border-radius: 15px;
+            border: 4px solid #222;
             margin-bottom: 30px;
-            text-align: left;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 75, 43, 0.2);
         }
 
-        .feature-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
-        .feature-item span {
-            color: #00ff41;
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        /* THE DOWNLOAD BUTTON */
         .download-btn {
-            display: block;
-            background: #00ff41;
-            color: #000;
+            display: inline-block;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            padding: 18px;
-            border-radius: 12px;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 255, 65, 0.2);
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
         }
 
         .download-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 255, 65, 0.4);
-            background: #00db38;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6);
         }
 
-        .footer {
+        footer {
             margin-top: 40px;
-            font-size: 0.7rem;
             color: #444;
-            border-top: 1px solid #222;
-            padding-top: 20px;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo">ABT</div>
-        <div class="company-name">Enterprise</div>
+        <h1>ABTZ</h1>
+        <p class="tagline">The Future of Training</p>
 
-        <h1>B4S Project</h1>
-        <p>The smartest way for Class 9 students to master Chemistry and Maths.</p>
-
-        <div class="feature-box">
-            <div class="feature-item"><span>[✓]</span> Daily Maths & Science Hacks</div>
-            <div class="feature-item"><span>[✓]</span> Real-time News Updates</div>
-            <div class="feature-item"><span>[✓]</span> Official ABT Launch</div>
+        <div class="preview-container">
+            <iframe src="https://buddy-for-study.lovable.app"></iframe>
         </div>
 
-        <a href="#" class="download-btn">DOWNLOAD LATEST APK</a>
+        <a href="#" class="download-btn">DOWNLOAD B4S APK</a>
 
-        <div class="footer">
-            &copy; 2025 ABT ENTERPRISE GLOBAL<br>
-            Thrissur, Kerala | Founder: ABHINAV K TONY
-        </div>
+        <footer>
+            FOUNDER: ABTZ SHADOW BOXER
+        </footer>
     </div>
 
 </body>
